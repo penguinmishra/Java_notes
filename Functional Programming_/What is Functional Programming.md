@@ -24,7 +24,7 @@ it provides a clean separation between pure and impure functions — so clean th
 
 4. Testing is easier- you don’t have to worry about them dealing with hidden state and side effects. Impure functions can change states of outside world variables and thus can make unit-testing tough! In case of pure functions, developer doesn't have to worry about that bit.
 5. Debugging is easier
-6. Parallel/Concurrent programming is easier: A functional program is ready for concurrency without any further modifications. You never have to worry about deadlocks and race conditions because you don’t need to use locks. No piece of data in a functional program is modified twice by the same thread, let alone by two different threads. That means you can easily add threads without ever giving conventional problems that plague concurrency applications a second thought.
+6. Parallel/Concurrent programming is easier: A functional program is ready for concurrency without any further modifications. You never have to worry about deadlocks and race conditions because you don’t need to use locks. No piece of data in a functional program is modified twice by the same thread, let alone by two different threads. That means you can easily add threads without ever giving conventional problems that plague concurrency applications a second thought.<br>
 ![imgConc][imgConc]
 > *Did you notice that in the definition of a data race there’s always talk of mutation? Any number of threads may read a memory location without synchronization, but if even one of them mutates it, you have a race. And that is the downfall of imperative programming: Imperative programs will always be vulnerable to data races because they contain mutable variables.*
 
