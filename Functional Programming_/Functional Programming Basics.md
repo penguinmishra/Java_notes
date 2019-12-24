@@ -84,3 +84,11 @@ public class Calculator {
 
 ## Recursion over looping
  - recursion uses function calls to achieve looping and so the code becomes more functional. Streams API is another alternate to loops whcih is functionally inspired.
+
+
+# Pure functions and IO
+How can an FP application possibly get anything done if all of its functions are pure functions because pure functions cannot have IO?<br>
+> *“How do I get anything done if I can’t read any inputs or write any outputs?”*<br>
+Answer is to violate 'Write only Pure Function' principal.<br><br>
+Wrapping an input from outside world in an IO does not make this a pure function but is impure still: `IO[String]`<br><br>
+when you need to write I/O code in functional programming languages, the solution is to violate the “Only Write Pure Functions” rule. The general idea is that you write as much of your application as possible in an FP style, and then handle the UI, Database I/O, Web Service I/O, and File I/O in the best way possible for your current programming language and tools.
