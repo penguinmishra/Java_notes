@@ -25,7 +25,7 @@ goto -7       // a7 ff f9
 ## Primitive Types
 
 Type | Definition
---- | --- | ---
+--- | ---
 `byte` | 1 byte
 `short` | 2 byte
 `int` | 4 byte
