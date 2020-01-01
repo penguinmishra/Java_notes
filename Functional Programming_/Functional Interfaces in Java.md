@@ -2,7 +2,7 @@
 
 ## Function
 
-The `Function interface represents a function (method) that takes a single parameter and returns a single value. Here is how the `Function` interface definition looks:
+The `Function` interface represents a function (method) that takes a single parameter and returns a single value. Here is how the `Function` interface definition looks:
 ```
 public interface Function<T,R> {
 
@@ -39,7 +39,7 @@ represents an operation which takes two parameters and returns a single value. B
 ```
 BinaryOperator<MyValue> binaryOperator =
         (value1, value2) -> { value1.add(value2); return value1; };
-		```
+```
 		
 ## Supplier
 represents an function that supplies a value of some sorts. The Supplier interface can also be thought of as a factory interface. Here is an example implementation of the Java Supplier interface:
