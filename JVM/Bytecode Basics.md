@@ -118,7 +118,7 @@ Sr. No. | Opcode | Operand(s) | Description
 ## Popping back to local variables
 
 For each push opcode, there exists a pop opcode which pops the top of the stack into the local variables. These can be formed by replacing `load` in push opcodes by `store`:
-Sr. No. | Opcode | Operand(s) | Description
+Opcode | Operand(s) | Description
 `istore` | vindex | pops int to local variable position vindex
 `istore_0` | none | pops int to local variable position zero
 `istore_1` | none |	pops int to local variable position 1
