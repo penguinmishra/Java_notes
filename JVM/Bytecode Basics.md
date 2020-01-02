@@ -185,7 +185,7 @@ When presented with the above code, javac objects with the following remark:
 ```
 BadArithmetic.java(7): Incompatible type for declaration. Explicit cast needed to convert int to byte.
                 byte c = a + b;
-		    ^
+		     ^
 ```
 To remedy the situation, the Java programmer must explicitly convert the int result of the addition of a + b back to a byte, as in the following code:
 ```
