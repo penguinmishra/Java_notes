@@ -1,4 +1,4 @@
-# Bytecodes of the Java Virtual Machine
+# Bytecode Basics
 
 - When JVM loads a class file, it gets one stream of bytecodes for each method in the class.
 - the bytecodes stream are stored in the method area of JVM.
@@ -76,3 +76,10 @@ Sr. No. | Opcode | Operand(s) | Description
 
 ## Pushing local variables onto the stack
 
+- Local variables are stored on stack frame (portion of stack being used by the currently executing method).
+- Each stack frame has 3 sections- local variables, execution environment and operand stack.
+- Pushing local variable onto the stack means moving a value from local variables section of the stack frame to the operand section.
+- Operand section of currently executing method is always on the top of the stack, so pushing a value onto the operand section of the current stack frame is the same as pushing a value onto the top of the stack.
+- Each local variable of a method has a unique index. The local variable section of a method's stack frame can be thought of as an array of 32-bit slots, each one addressable by the array index. Local variables of type long or double, which occupy two slots, are referred to by the lower of the two slot indexes. For example, a double that occupies slots two and three would be referred to by an index of two.
+- some opcodes have the index of variables in them itself such as `iload_0`. Some opcodes such as `iload` do not have index so they take local variable index(8 bit index) following the opcode.
+- This 8 bit index variable limits the number of local variables to 256. A separate instruction `wide` can extend an 8 bit index by another 8 index which raises the local variable limit to 64 kilobytes. `wide` opcode is followed by an 8 bit operand. The `wide` opcode can precede an instruction such as `iload` that takes an 8 bit unsigned local variable index.
