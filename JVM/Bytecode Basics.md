@@ -89,31 +89,31 @@ Sr. No. | Opcode | Operand(s) | Description
 
 Sr. No. | Opcode | Operand(s) | Description
 --- | --- | --- | ---
-1. | `iload` | `vindex` | pushes int variable from local variable position vindex
-2. | `iload_0` | none | pushes int variable from local variable 0
-3. | `iload_1` | none | pushes int variable from local variable position 1
-4. | `iload_2` | none | pushes int variable from local variable position 2
-5. | `iload_3` | none | pushes int variable from local variable position 3
-6. | `fload` | `vindex` | pushes float variable from local variable position vindex
-7. | `fload_0` | none | pushes float variable from local variable position 0
-8. | `fload_1` | none | pushes float variable from local variable position 1
-9. | `fload_2` | none | pushes float variable from local variable position 2
-10. | `fload_3` | none | pushes float variable from local variable position 3
-11. | `lload` | `vindex` | pushes long from local variable positions vindex and (vindex + 1)
-12. | `lload_0` | none | pushes long from local variable positions zero and one
-13. | `lload_1` | none | pushes long from local variable positions one and two
-14. | `lload_2` | none | pushes long from local variable positions two and three
-15. | `lload_3` | none | pushes long from local variable positions three and four
-16. | `dload` | `vindex` | pushes double from local variable positions vindex and (vindex + 1)
-17. | `dload_0` | none | pushes double from local variable positions zero and one
-18. | `dload_1` | none | pushes double from local variable positions one and two
-19. | `dload_2` | none | pushes double from local variable positions two and three
-20. | `dload_3` | none | 	pushes double from local variable positions three and four
-21. | `aload` | `vindex` | pushes object reference from local variable position vindex
-22. | `aload_0` | none | pushes object reference from local variable position zero
-23. | `aload_1` | none | pushes object reference from local variable position one
-24. | `aload_2` | none | pushes object reference from local variable position two
-25. | `aload_3` | none | pushes object reference from local variable position three
+1 | `iload` | `vindex` | pushes int variable from local variable position vindex
+2 | `iload_0` | none | pushes int variable from local variable 0
+3 | `iload_1` | none | pushes int variable from local variable position 1
+4 | `iload_2` | none | pushes int variable from local variable position 2
+5 | `iload_3` | none | pushes int variable from local variable position 3
+6 | `fload` | `vindex` | pushes float variable from local variable position vindex
+7 | `fload_0` | none | pushes float variable from local variable position 0
+8 | `fload_1` | none | pushes float variable from local variable position 1
+9 | `fload_2` | none | pushes float variable from local variable position 2
+10 | `fload_3` | none | pushes float variable from local variable position 3
+11 | `lload` | `vindex` | pushes long from local variable positions vindex and (vindex + 1)
+12 | `lload_0` | none | pushes long from local variable positions zero and one
+13 | `lload_1` | none | pushes long from local variable positions one and two
+14 | `lload_2` | none | pushes long from local variable positions two and three
+15 | `lload_3` | none | pushes long from local variable positions three and four
+16 | `dload` | `vindex` | pushes double from local variable positions vindex and (vindex + 1)
+17 | `dload_0` | none | pushes double from local variable positions zero and one
+18 | `dload_1` | none | pushes double from local variable positions one and two
+19 | `dload_2` | none | pushes double from local variable positions two and three
+20 | `dload_3` | none | 	pushes double from local variable positions three and four
+21 | `aload` | `vindex` | pushes object reference from local variable position vindex
+22 | `aload_0` | none | pushes object reference from local variable position zero
+23 | `aload_1` | none | pushes object reference from local variable position one
+24 | `aload_2` | none | pushes object reference from local variable position two
+25 | `aload_3` | none | pushes object reference from local variable position three
 
 ## Popping back to local variables
 
